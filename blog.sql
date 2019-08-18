@@ -1,0 +1,12 @@
+CREATE DATABASE practica_blog;
+
+USE practica_blog;
+
+CREATE TABLE articulos(
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(200) NOT NULL,
+    extracto VARCHAR(200) NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    texto TEXT NOT NULL,
+    thumb VARCHAR(50) NOT NULL
+);
